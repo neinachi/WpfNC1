@@ -30,9 +30,9 @@ namespace WpfNC1
             
 
         
-              MySqlConnection con = new MySqlConnection("server=localhost;user id=root;persistsecurityinfo=True;database=bimhdb; password=Romanoleg1");
+              MySqlConnection con = new MySqlConnection("server=remotemysql.com;user id=dp1G6hEbXI;persistsecurityinfo=True;database=dp1G6hEbXI; password=et5IiqnyXu");
               con.Open();
-              MySqlDataAdapter adp = new MySqlDataAdapter("select * from bimhdb.goods", con);
+              MySqlDataAdapter adp = new MySqlDataAdapter("select * from dp1G6hEbXI.table1", con);
               DataTable dt = new DataTable();
               adp.Fill(dt);
               DataGrid1.DataContext = dt;
